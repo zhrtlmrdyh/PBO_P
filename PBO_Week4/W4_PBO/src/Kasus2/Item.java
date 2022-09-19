@@ -1,0 +1,21 @@
+/*
+ * Nama  : Zahratul Mardiyah
+ * NIM   : 211511064
+ * Kelas : 2B - D3 Teknik Informatika
+*/
+
+package Kasus2;
+
+public class Item {
+// Kedua variabel ini diatur sebagai private untuk encapsulasi variabel
+	private String name;
+	private Item() {
+		name = "Ipin";
+	}
+	public Item(String name) {
+	this();
+	System.out.println(this.name);   
+	}
+}
+
+
