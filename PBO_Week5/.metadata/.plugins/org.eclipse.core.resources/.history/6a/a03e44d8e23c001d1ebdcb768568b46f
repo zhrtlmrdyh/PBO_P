@@ -1,0 +1,61 @@
+/*
+ * Nama		: Zahratul Mardiyah
+ * NIM		: 211511064
+ * Kelas	: 2B - D3 Teknik Informatika
+ */
+
+package Kasus1;
+
+public class Restaurant {
+	private Makanan[] menu_makanan;
+	private static byte id=0;
+	
+	public Restaurant()
+	{
+		menu_makanan = new Makanan[10];
+	}
+	
+	public void tampilMenuMakanan
+	{
+		for(int i =0; i<=id; i++) 
+		{
+			if(!isOutOfStock(i)) 
+			{
+				//yang saya ubah
+				this.menu_makanan[i].TampilMakanan();
+			}
+		}
+	}
+	
+	public void tambahMenuMakanan(String nama, double harga, int stok) 
+	{
+		this.menu_makanan[id] = new Makanan (nama, harga, stok);
+	}
+	
+	public boolean isOutOfStock(int id) 
+	{
+		return menu_makanan[id].getStok() == 0;
+	}
+	
+	public static void nextId() 
+	{
+		id++;
+	}
+	
+	//Fitur tambahan
+	public void Pemesanan(tring, int i, String string2, int jString namaMakanan[i].getNamaMakanan())
+	{
+		for(int i = 0; i <= id; i++)
+		{
+			if(nama_makanan.equals(menu_makanan[i].getNamaMakanan())) 
+			{
+				if(menu_makanan[i].getStok() >= jumlah)
+				{
+				System.out.println(jumlah + " " + menu_makanan[i].getNamaMakanan() + "Berhasil  Terjual");
+				menu_makanan[i].kurangStok(jumlah);
+				}
+			}
+		else System.out.println("Stok" + menu_makanan[i].getNamaMakanan() + "Stok kurang!")
+		}
+	}
+}
