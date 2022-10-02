@@ -1,0 +1,27 @@
+package Exercise2;
+
+public class Rectangle extends Shape {
+	private double width;
+	private double lenght;
+	
+	public Rectangle() { 
+		this.width = 1.0;
+		this.lenght = 1.0;
+	}
+	
+	public Rectangle(double w, double l) {
+		this.width = w;
+		this.lenght = l;
+	}
+	
+	public Rectangle(double w, double l, String c, boolean f) {
+		this.width = w;
+		this.lenght = l;
+		super(c, f);
+	}
+	
+	public double getWidth() {
+		return width;
+	}
+
+}
